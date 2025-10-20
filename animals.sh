@@ -6,7 +6,7 @@
 while true
 do
   echo "Type an animal (or 'Goodbye' to exit):"
-  read animal
+  read -r animal
 
   # Check if the user wants to exit
   if [[ "$animal" == "Goodbye" ]]; then

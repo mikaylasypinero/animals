@@ -1,13 +1,13 @@
 # README for Animals Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Mikayla Sypinero
+- **Course:** CPSC 298
 - **Assignment:** Animals Script – Case Statement
-- **Date:** [Date of Completion]
+- **Date:** 10/20/25
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain how it classifies animals and how the program continues to run until the user types "Goodbye".]
+This Bash script prompts the user to type the name of an animal and responds with a short message describing that animal. It uses a case statement to determine if the animal is domestic, wild, or unknown. The program continues running until the user types “Goodbye”, at which point it displays a farewell message and exits.
 
 ## Animal Classification Rules
 This script determines the type of animal according to the following logic:
@@ -28,23 +28,32 @@ To test with an input file (for example, `animals-input`):
 ./animals.sh < animals-input
 ```
 ## How the Script Works
-[Explain in 3-5 sentences how your script works. Include information about:]
-- The use of the while loop to keep asking for user input
-- The case statement that checks the animal name
-- The * wildcard pattern that handles unknown inputs
-- How the loop exits when "Goodbye" is entered
+The script begins by prompting the user to enter an animal name. It uses a while loop that repeatedly asks for input until the user types "Goodbye".
+Inside the loop, a case statement checks the entered animal and prints an appropriate message for "DOG", "CAT", or "TIGER".
+If the input doesn’t match one of these, the wildcard pattern * catches it and prints “unknown animal.”
+Once the user types "Goodbye", the script breaks out of the loop and ends with a goodbye message
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example valid inputs you tested (at least three, including “DOG”, “CAT”, “TIGER”)
-- Example invalid inputs and why they produce “unknown animal”
-- How you used the animals-input file to test
+I tested the script by running it directly and by using an input file.
+Example valid inputs:
+
+DOG → “Dogs are loyal and friendly!”
+
+CAT → “Cats are curious creatures!”
+
+TIGER → “Tigers are strong and wild!”
+
+Invalid inputs:
+
+Elephant → “unknown animal”
+
+Bird → “unknown animal”
 
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding case statements, or Git workflow problems.]
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
+I used class slides and past assignments
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
